@@ -1,0 +1,49 @@
+main{
+	marigin : auto;
+}
+body{
+	background-color : #f5f5f5;
+}
+.wrapper{
+	width : 100vw;
+	marigin : auto;
+	display : flex;
+	flex-direction: row;
+	align-items : center;
+	justify-content : center;
+
+}
+.frame{
+	position : relative;
+	overflow : hidden;
+	margin : auto;
+	height : 80vh;
+	width : 30vw;
+	border-radius : 3px;
+	text-align : center;
+	background : #f5f5f5;
+	background-image : linear-gradient(to right, #f3e5f5 33%, #ffffff 33% ,#ffffff 50%, #f3e5f5 50%, #f3e5f5 83%, #ffffff 83%, #ffffff 100%); 
+}
+.baloon-1{
+	position : absolute;
+	border-radius : 50%;
+	top : 3vw;
+	left : 1vw;
+	height : 11vw;
+	width : 13vw;
+	box-shadow: inset -12px -13px 13px 30px #f3e38b;
+	transform: rotate(353deg);
+	z-index : 2;
+	
+}
+
+.baloon-1::after {
+    content: "";
+    position: absolute;
+    bottom: -0.9vw;
+    width: 2vw;
+    height: 1vw;
+    background: #f3e38b;
+    left: 4.3vw;
+    border-radius: 50%;
+  }
